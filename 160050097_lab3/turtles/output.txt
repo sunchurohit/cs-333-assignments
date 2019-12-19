@@ -1,0 +1,43 @@
+turtle>mkdir test // (no output , creates directory named test)
+
+turtle>ls
+a.out  output.txt  report.txt  test  turtle.c
+
+turtle>cd test  // (just changess the pwd to test) (the sample executable also also prints the final directory while using cd)
+/home/joker/Downloads/lab3/turtles/test
+
+turtle>pwd
+/home/joker/Downloads/lab3/turtles/test
+
+turtle>cd ..
+/home/joker/Downloads/lab3/turtles
+
+turtle>pwd
+/home/joker/Downloads/lab3/turtles
+
+turtle>cd
+Wrong number of arguements
+
+turtle>rm test
+rm: cannot remove 'test': Is a directory
+
+turtle>rmdir test (removes the directory test, no output)
+
+turtle>ls
+a.out  output.txt  report.txt  turtle.c
+
+turtle>sleep 5 (sleeps for 5 seconds , no output)
+
+turtle>echo "Hello"
+"Hello"
+
+turtle>echo "Hello" > hello.txt (successfully wrote the content to hello.txt)
+
+turtle>sleep 5 ;; cat hello.txt ;; sleep 1 ;; echo "hi" ;; ls
+"Hello"
+"hi"
+a.out  output.txt  report.txt  turtle.c
+
+
+Apart from above tested some commands involving some combinations of ;; , cd and '>'
+

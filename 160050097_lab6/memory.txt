@@ -1,0 +1,13 @@
+line 3177 : r is now pointing to the page pointed by v. In line 3177, we are adding the old free list (kmem.freelist) as the next pointer of r.
+line 3788 : In this line, we are making r as the starting point of the linked list (kmem.freelist). So, the freelist starts from r and follows the old freelist.
+			Overall, these two add 'r' to the old freelist (kmem.freelist) and make r as the starting point of the freelist (kmem.freelist).
+
+line 1740 : pde points to the address of the entry in the page directory which corresponds to the virtual address 'va'. (by looking at the first 10 bits of va).
+line 1742 : pgtab points to the address of the page table given by pde (pde is an entry in the page table directory).
+line 1753 : return the address of the entry in the page table which corresponds to the virtual address 'va'.(by looking at the middle 10 bits of va).
+
+
+
+
+
+

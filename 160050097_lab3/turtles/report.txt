@@ -1,0 +1,9 @@
+Used the tokenize function given to get individual commands
+
+First implemented normal commands (which dont involve cd , > and ;;) using one child process and the function execvp
+
+Then implemented the cd command using the help of getcwd function.
+
+Then implemented piping (>) to a file by creating a file (or using the file is already present) and used dup2 function to change its fid to 1 so when we print anything , the output goes to the file . Implemented using one child proceses.
+
+After implementing the above 3 functionalities , then I implemented the code when multiple commands are given using the above 3 functinalities

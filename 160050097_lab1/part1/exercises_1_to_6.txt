@@ -1,0 +1,112 @@
+Q1
+
+a
+CPU sockets : 1 
+CPU cores : 4
+Number of CPU's : 4
+
+b
+CPU 1 : 2279.531 MHz
+CPU 2 :	1599.960 MHz
+CPU 3 : 2307.421 MHz
+CPU 4 : 1600.546 MHz
+
+c
+Total Memory : 8007228 kB
+
+d
+Free Memory      : 4201232 kB
+Available Memory : 5451984 kB
+Difference between them : 1250752 kB
+
+e
+83
+
+f
+10462769
+
+g
+The files are of size 0 bytes. 
+Question of investigation : If they are storing some information, why is it showing 0?
+
+
+Q2
+
+For program 1 :
+VmSize : 8136 kB
+VmRSS : 640 kB
+
+For program 2 :
+VmSize : 12048 kB 
+VmRSS : 644 kB
+
+For program 3 :
+VmSize : 8136 kB
+VmRSS : 3092 kB
+
+For program 4 :
+VmSize : 8136 kB
+VmRSS : 5232 kB
+
+As, VmSize is the sum of memory allocated, programs 1,3 and 4 have the same memory allocated in them.Hence, they have same VmSize. In program 2 , the array size is increased, so memory allocated is more.
+Hence,it has high VmSize compared to program 1,3 and 4.
+
+VmRSS is high for program 3 and program 4 (as compared to program 1 and 2) because number of instructions to be run are more in these two programs (we are iterating through the for loop)
+Program 4 (VmRSS) > Program 3 (VmRSS) because we are iterating through the entire loop in Program 4 but in Program 3 , we iterate through half the loop.
+
+Q3
+15 sub processes
+
+Command : ps -ef | grep './subprocesses <roll-no>' -c
+
+Q4
+
+empty system calls : 26
+hello system calls : 39
+
+a
+
+Lines 1-25 are common between the two strace outputs, (they have the same system calls).
+Line 26 of the output of strace ./empty is also common with line 39 of strace ./hello
+Lines 26-38 of strace ./hello are specific to the program.
+
+b
+The first program (empty) does not have any unique system calls.
+The second program (hello) has 3 unique system calls -- getpid() , write() and lseek().
+
+Q5
+command : lsof -c 'openfiles'
+
+/home/labuser/Downloads/lab1/files
+/
+/home/labuser/Downloads/lab1/files/openfiles
+/lib/x86_64-linux-gnu/libc-2.23.so
+/lib/x86_64-linux-gnu/ld-2.23.so
+/dev/pts/18
+/dev/pts/18
+/dev/pts/18
+/tmp/welocme to OS
+/tmp/CS333
+/tmp/CS347
+
+Q6
+Command used : 'lsblk'
+
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0 59.6G  0 disk 
+|-sda1   8:1    0 58.7G  0 part /
+|-sda2   8:2    0    1K  0 part 
+`-sda5   8:5    0  975M  0 part [SWAP]
+
+sda and sda2 don't have any mountpoints
+Mountpoint of sda1 - /
+Mountpoint of sda5 - [SWAP]
+
+Command used : 'blkid'
+
+File system present on sda1 - UUID of the file system ="838e7567-2ebb-4da3-b975-c248be3ab714" , TYPE of the file system ="ext4" and PARTUUID of the file system ="9e31e3cf-01"
+File system present on sda5 - UUID of the file system ="3898b2e8-bfb1-46ea-9ffc-1e2d4f97aa49" , TYPE of the file system ="swap" and PARTUUID of the file system ="9e31e3cf-05"
+
+
+
+

@@ -1,0 +1,2 @@
+In boot_sector1.bin , the last two bytes are not stored as 0xaa55 ,hence we get a message saying no bootable device is present.
+In boot_sector2.bin , the last two bytes are indeed stored as 0xaa55, hence it was booted successfully. 

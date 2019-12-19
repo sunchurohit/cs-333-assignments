@@ -1,0 +1,4 @@
+[5] Parent waits for 5 seconds 
+[5] Parent sends signal to child 
+Signal handler invoked !!!. signal type: 1 
+

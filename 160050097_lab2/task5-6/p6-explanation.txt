@@ -1,0 +1,7 @@
+Before any input is given, the child process is in wait state (as it is waiting for the input to be given,
+hence the S symbol and + symbol because it is a foreground process.
+
+As soon as we give the input, the state of the child process changes.
+It gets ready , starts executing and finally terminates.
+As the parent is sleeping for 1 minute, it has not yet reaped the resources of the child's process.
+Hence, the child process is in the zombie state which is given by the symbol Z and + symbol because it is a foreground process

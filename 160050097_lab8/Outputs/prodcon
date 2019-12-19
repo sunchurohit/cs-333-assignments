@@ -1,0 +1,35 @@
+prodcon t1-f1.txt t1-f2.txt
+
+[93]: Produced an item. Curernt buffer size: 1
+[92]: Produced an item. Curernt buffer size: 2
+[93]: Produced an item. Curernt buffer size: 3
+[93]: Produced an item. Curernt buffer size: 4
+[92]: Produced an item. Curernt buffer size: 5
+[92]: Produced an item. Curernt buffer size: 6
+[93]: Produced an item. Curernt buffer size: 7
+[92]: Produced an item. Curernt buffer size: 8
+[93]: Produced an item. Curernt buffer size: 9
+[93]: Produced an item. Curernt buffer size: 10
+[92]: Consumed an item. Curernt buffer size: 9
+[93]: Produced an item. Curernt buffer size: 10
+[92]: Consumed an item. Curernt buffer size: 9
+[93]: Produced an item. Curernt buffer size: 10
+
+---------------------------------------------
+
+prodcon t2-f1.txt t2-f2.txt
+
+[95]: Produced an item. Curernt buffer size: 1
+[94]: Consumed an item. Curernt buffer size: 0
+[95]: Produced an item. Curernt buffer size: 1
+[94]: Consumed an item. Curernt buffer size: 0
+[95]: Produced an item. Curernt buffer size: 1
+[94]: Consumed an item. Curernt buffer size: 0
+[94]: Produced an item. Curernt buffer size: 1
+[95]: Consumed an item. Curernt buffer size: 0
+[95]: Produced an item. Curernt buffer size: 1
+[94]: Consumed an item. Curernt buffer size: 0
+[95]: Produced an item. Curernt buffer size: 1
+[94]: Consumed an item. Curernt buffer size: 0
+[95]: Produced an item. Curernt buffer size: 1
+[95]: Produced an item. Curernt buffer size: 2

@@ -1,0 +1,10 @@
+Reason about the outputs:
+
+hierarchy : parent > child > grandchild
+
+if grandchild sleeps more than the child, then by the grandchild wakes up the child has already exited and the signal handler of the child's process won't be invoked.
+Hence, we get only one output regarding the exit (basically when the parent's signal handler is invoked when the child exited). (total 3 outputs)
+
+if the grandchild sleeps less than child , then by the grandchild wakes up the child has not exited yet (it is still sleeping) ,
+but now , the signal handler of the child is invoked and DISTURBS THE SLEEP of the child and we get the output of grandchild's exit and child's exit almost instantly 
+because after signal handling , the child also exits almost instantly. (total 4 outputs)

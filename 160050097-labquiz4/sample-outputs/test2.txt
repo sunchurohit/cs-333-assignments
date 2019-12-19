@@ -1,0 +1,9 @@
+[4] Executing task1. ID: 100. a: 10. b: 11 
+[5] Executing task2. ID: 101. a: 20. b: 21 
+[4] Completed 1 tasks. Last completed task ID: 100 
+[4] Executing task1. ID: 101. a: 30. b: 31 
+[5] Completed 1 tasks. Last completed task ID: 101 
+[4] Completed 2 tasks. Last completed task ID: 101 
+
+
+Result (100): 21.  Result (101): 61. Result (102): 61.
